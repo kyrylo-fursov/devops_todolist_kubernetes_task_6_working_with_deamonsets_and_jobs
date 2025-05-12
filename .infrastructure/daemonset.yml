@@ -3,6 +3,8 @@ kind: DaemonSet
 metadata:
   name: todoapp-monitor
   namespace: mateapp
+  labels:
+    app: todoapp-monitor
 spec:
   selector:
     matchLabels:
